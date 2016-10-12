@@ -320,148 +320,40 @@
   animation: fadeInOnly 10ms ease-in-out 0s forwards;
 }
 .frame1-container {
-    -webkit-animation: fadeOut 0.5s ease-in-out 6s forwards;
-    -moz-animation: fadeOut 0.5s ease-in-out 6s forwards;
-    animation: fadeOut 0.5s ease-in-out 6s forwards;
 }
 .frame1-content {
-    -webkit-transform-origin: 27% 61%;
-    -moz-transform-origin: 27% 61%;
-    transform-origin: 27% 61%;
-
-    -webkit-animation: zoomOutFrame1 1s ease-in-out 4s forwards;
-    -moz-animation: zoomOutFrame1 1s ease-in-out 4s forwards;
-    animation: zoomOutFrame1 1s ease-in-out 4s forwards;
 }
-.car-container {
-    -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
-    -moz-animation: hideContent 10ms ease-in-out 0s forwards;
-    animation: hideContent 10ms ease-in-out 0s forwards;
+.frame1-bg {
+  background: url('./img/300x250_bg.jpg') no-repeat center center; 
 }
-.car {
-    width: 864px;
-    height: 648px;
-    background: url('./img/300x250_car.jpg') no-repeat center center;
-    top: -239px;
-    left: -199px;
-
-    -webkit-animation: fadeIn 0.5s ease-in-out 3.75s forwards;
-    -moz-animation: fadeIn 0.5s ease-in-out 3.75s forwards;
-    animation: fadeIn 0.5s ease-in-out 3.75s forwards;
+.frame1-card-wrapper {
+  perspective: 800px;
+  width: 229px;
+  height: 136px;
+  top: 100px;
+  left: 50px;
 }
-
-.logo-flame {
-    background: url('./img/300x250_flame.png') no-repeat center center;
-
-    -webkit-animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-    -moz-animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-    animation: fadeOut 0.5s ease-in-out 2.5s forwards;
+.frame1-card-container {
+  width: 229px;
+  height: 136px;
+  top: 0px;
+  left: 0px;
 }
-.logo-bg-container {
-    -webkit-animation: zoomOutBgLogo 0.5s ease-in-out 3.5s forwards;
-    -moz-animation: zoomOutBgLogo 0.5s ease-in-out 3.5s forwards;
-    animation: zoomOutBgLogo 0.5s ease-in-out 3.5s forwards;
-}
-.logo-bg {
-    background-color: #e05206;
-    -webkit-animation: resizeBackground 0.5s ease-in-out 3s forwards;
-    -moz-animation: resizeBackground 0.5s ease-in-out 3s forwards;
-    animation: resizeBackground 0.5s ease-in-out 3s forwards;
-}
+.frame1-card {
+  background: url('./img/300x250_frame1_card.png') no-repeat center center;
+  width: 229px;
+  height: 136px;
+  top: 0px;
+  left: 0px;
+  transform: rotateY(-60deg) translate3d(-140px,0,0);
 
-.logo-container {
-}
-.logo {
-    background: url('./img/300x250_logo.png') no-repeat center center;
-    width: 234px;
-    height: 51px;
-    top: 98px;
-    left: 35px;
-
-    -webkit-animation: zoomOutLogo 0.5s ease-in-out 3.5s forwards;
-    -moz-animation: zoomOutLogo 0.5s ease-in-out 3.5s forwards;
-    animation: zoomOutLogo 0.5s ease-in-out 3.5s forwards;
-}
-
-.logo-flair {
-    background: url('./img/300x250_flare.png') no-repeat center center;
-
-    -webkit-animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-    -moz-animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-    animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-}
-
-/*---- frame 2 -----*/
-
-.frame2-wrapper {
-    opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
-    z-index: 1;
-
-    -webkit-animation: fadeInOnly 10ms ease-in-out 0s forwards;
-    -moz-animation: fadeInOnly 10ms ease-in-out 0s forwards;
-    animation: fadeInOnly 10ms ease-in-out 0s forwards;
-}
-.frame2-container {
-    -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
-    -moz-animation: hideContent 10ms ease-in-out 0s forwards;
-    animation: hideContent 10ms ease-in-out 0s forwards;
-}
-.frame2-content {
-    -webkit-animation: fadeOut 0.5s ease-in-out 10.5s forwards;
-    -moz-animation: fadeOut 0.5s ease-in-out 10.5s forwards;
-    animation: fadeOut 0.5s ease-in-out 10.5s forwards;
-}
-
-.logo2 {
-    background: url('./img/300x250_logo2.png') no-repeat center center;
-    width: 300px;
-    height: 108px;
-    top: 0px;
-    left: 0px;
-
-    -webkit-animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-    -moz-animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-    animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-}
-.circle-container {
-    -webkit-animation: fadeOut 0.5s ease-in-out 8.5s forwards;
-    -moz-animation: fadeOut 0.5s ease-in-out 8.5s forwards;
-    animation: fadeOut 0.5s ease-in-out 8.5s forwards;
-}
-.circle {
-    background: url('./img/300x250_circle_icon.png') no-repeat center center;
-    width: 151px;
-    height: 107px;
-    bottom: 17px;
-    left: 74px;
-
-    -webkit-animation: fadeIn 0.5s ease-in-out 7s forwards;
-    -moz-animation: fadeIn 0.5s ease-in-out 7s forwards;
-    animation: fadeIn 0.5s ease-in-out 7s forwards;
-}
-.text {
-    background: url('./img/300x250_text.png') no-repeat center center;
-    width: 254px;
-    height: 64px;
-    bottom: 44px;
-    left: 23px;
-
-    -webkit-animation: fadeIn 0.5s ease-in-out 9s forwards;
-    -moz-animation: fadeIn 0.5s ease-in-out 9s forwards;
-    animation: fadeIn 0.5s ease-in-out 9s forwards;
 }
 
 /*--- frame3 ---*/
 .frame3-container {
-    -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
-    -moz-animation: hideContent 10ms ease-in-out 0s forwards;
-    animation: hideContent 10ms ease-in-out 0s forwards;
+  -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
+  -moz-animation: hideContent 10ms ease-in-out 0s forwards;
+  animation: hideContent 10ms ease-in-out 0s forwards;
 }
 .frame3 {
-    background: url('./img/300x250_final.jpg') no-repeat center center;
-
-    -webkit-animation: fadeIn 0.5s ease-in-out 11s forwards;
-    -moz-animation: fadeIn 0.5s ease-in-out 11s forwards;
-    animation: fadeIn 0.5s ease-in-out 11s forwards;
 }
