@@ -126,38 +126,38 @@
   }
 }
 
-/*-- clear --*/
-@-webkit-keyframes clear {
+/*-- slideLeft --*/
+@-webkit-keyframes slideLeft {
   0%   {
     visibility: visible;
-    width: 364px;
+    -webkit-transform: translate(0,0);
   }
   100% { 
     visibility: hidden;
     width: 0;
+    -webkit-transform: translate(500px,0);
   }
 }
-@-moz-keyframes clear {
+@-moz-keyframes slideLeft {
   0%   {
     visibility: visible;
-    width: 364px;
+    -moz-transform: translate(0,0);
   }
   100% { 
     visibility: hidden;
-    width: 0;
+    -moz-transform: translate(500px,0);
   }
 }
-@keyframes clear {
+@keyframes slideLeft {
   0%   {
     visibility: visible;
-    width: 364px;
+    transform: translate(0,0);
   }
   100% { 
     visibility: hidden;
-    width: 0;
+    transform: translate(500px,0);
   }
 }
-
 
 
 /*-------------------------------------------*/
@@ -206,79 +206,64 @@
   -moz-animation: fadeIn 0.5s ease-in-out 1s forwards;
   animation: fadeIn 0.5s ease-in-out 1s forwards;
 }
-
-.half-container {
-  position: absolute;
-  top: 0px;
-  left: 0px;
+.bg {
+  background: url('./img/728z90_bg.jpg') no-repeat center center;
+}
+.left-container {
   width: 364px;
   height: 90px;
-}
-
-.left-container {
+  top: 0px;
   left: 0px;
-  background-color: #e05206;
-}
-.logo-flame-container {
-  left: auto;
-  right: 0;
   overflow: hidden;
 
-  -webkit-animation: clear 0.5s ease-in-out 2.5s forwards;
-  -moz-animation: clear 0.5s ease-in-out 2.5s forwards;
-  animation: clear 0.5s ease-in-out 2.5s forwards;
-}
-.logo-flame {
-  background: url('./img/728x90_logo_flame.png') no-repeat center center;
-  left: auto;
-  right: 0;
-}
-.logo-white-container {
-  left: auto;
-  right: 0;
-  overflow: hidden;
-
-  -webkit-animation: clear 0.5s ease-in-out 4s forwards;
-  -moz-animation: clear 0.5s ease-in-out 4s forwards;
-  animation: clear 0.5s ease-in-out 4s forwards;
-}
-.logo-white {
-  background: url('./img/728x90_logo_white.png') no-repeat center center;
-  left: auto;
-  right: 0;
-}
-.text-wrapper {
   -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
   -moz-animation: hideContent 10ms ease-in-out 0s forwards;
   animation: hideContent 10ms ease-in-out 0s forwards;
 }
-.text-container {
-  -webkit-animation: fadeOut 0.5s ease-in-out 6s forwards;
-  -moz-animation: fadeOut 0.5s ease-in-out 6s forwards;
-  animation: fadeOut 0.5s ease-in-out 6s forwards;
-}
-.text {
-  background: url('./img/728x90_text.png') no-repeat center center;
-  -webkit-animation: fadeIn 0.5s ease-in-out 4.5s forwards;
-  -moz-animation: fadeIn 0.5s ease-in-out 4.5s forwards;
-  animation: fadeIn 0.5s ease-in-out 4.5s forwards;
-}
-.logo-color-container {
-  -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
-  -moz-animation: hideContent 10ms ease-in-out 0s forwards;
-  animation: hideContent 10ms ease-in-out 0s forwards;
-}
-.logo-color {
-  background: url('./img/728x90_logo_color.png') no-repeat center center;
+.card {
+  background: url('./img/728x90_card.png') no-repeat center center;
+  width: 133px;
+  height: 82px;
+  top: 4px;
+  left: -133px;
 
-  -webkit-animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-  -moz-animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-  animation: fadeIn 0.5s ease-in-out 6.5s forwards;
+  -webkit-animation: slideLeft 2s linear 1.5s forwards;
+  -moz-animation: slideLeft 2s linear 1.5s forwards;
+  animation: slideLeft 2s linear 1.5s forwards;
 }
+.text1-container {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  z-index: 1;
 
-.right-container {
-  left: auto;
-  right: 0px;
+  -webkit-animation: fadeInOnly 10ms ease-in-out 0s forwards;
+  -moz-animation: fadeInOnly 10ms ease-in-out 0s forwards;
+  animation: fadeInOnly 10ms ease-in-out 0s forwards;
+}
+.text1-content {
+  -webkit-animation: fadeOut 0.5s ease-in-out 5.5s forwards;
+  -moz-animation: fadeOut 0.5s ease-in-out 5.5s forwards;
+  animation: fadeOut 0.5s ease-in-out 5.5s forwards;
+}
+.text1 {
+  background: url('./img/728x90_text1.png') no-repeat center center;
+  width: 239px;
+  height: 59px;
+  top: 13px;
+  left: 56px;
 
-  background: url('./img/728x90_logo_right.jpg') no-repeat center center;
+  -webkit-animation: fadeIn 1s ease-in-out 3.5s forwards;
+  -moz-animation: fadeIn 1s ease-in-out 3.5s forwards;
+  animation: fadeIn 1s ease-in-out 3.5s forwards;
+}
+.text2 {
+  background: url('./img/728x90_text2.png') no-repeat center center;
+  width: 194px;
+  height: 47px;
+  top: 25px;
+  left: 80px;
+
+  -webkit-animation: fadeIn 1s ease-in-out 6s forwards;
+  -moz-animation: fadeIn 1s ease-in-out 6s forwards;
+  animation: fadeIn 1s ease-in-out 6s forwards;
 }
