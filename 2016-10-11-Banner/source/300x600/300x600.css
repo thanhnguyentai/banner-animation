@@ -71,10 +71,12 @@
 /*-- fade out animation--*/
 @-webkit-keyframes fadeOut {
   0%   { 
+    visibility: visible;
     opacity: 1;
     -webkit-transform: translate(0,0);
   }
   100% { 
+    visibility: visible;
     opacity: 0; 
     -webkit-transform: translate(0,0);
   }
@@ -82,9 +84,11 @@
 @-moz-keyframes fadeOut {
   0%   { 
     opacity: 1; 
+    visibility: visible;
     -moz-transform: translate(0,0);
   }
   100% { 
+    visibility: visible;
     opacity: 0; 
     -moz-transform: translate(0,0);
   }
@@ -92,9 +96,11 @@
 @keyframes fadeOut {
   0%   { 
     opacity: 1; 
+    visibility: visible;
     transform: translate(0,0);
   }
   100% { 
+    visibility: visible;
     opacity: 0; 
     transform: translate(0,0);
   }
@@ -126,149 +132,134 @@
   }
 }
 
-/*-- zoom out logo --*/
-@-webkit-keyframes zoomOutLogo {
+/*-- cardComeIn  --*/
+@-webkit-keyframes cardComeIn {
   0%   {
     visibility: visible;
-    -webkit-transform: scale(1,1) rotate(0);
+    -webkit-transform: rotateX(-8deg) rotateY(-50deg) translate3d(-600px,0,0px);
   }
   100% { 
     visibility: visible;
-    -webkit-transform: scale(0.9,0.93) rotate(-90deg);
+    -webkit-transform: rotateX(-8deg) rotateY(-50deg) translate3d(0px,0,0px);
   }
 }
-@-moz-keyframes zoomOutLogo {
+@-moz-keyframes cardComeIn {
   0%   {
     visibility: visible;
-    -moz-transform: scale(1,1) rotate(0);
+    -moz-transform: rotateX(-8deg) rotateY(-50deg) translate3d(-600px,0,0px);
   }
   100% { 
     visibility: visible;
-    -moz-transform: scale(0.9,0.93) rotate(-90deg);
+    -moz-transform: rotateX(-8deg) rotateY(-50deg) translate3d(0px,0,0px);
   }
 }
-@keyframes zoomOutLogo {
+@keyframes cardComeIn {
   0%   {
     visibility: visible;
-    transform: scale(1,1) rotate(0);
+    transform: rotateX(-8deg) rotateY(-50deg) translate3d(-600px,0,0px);
   }
   100% { 
     visibility: visible;
-    transform: scale(0.9,0.93) rotate(-90deg);
+    transform: rotateX(-8deg) rotateY(-50deg) translate3d(0px,0,0px);
   }
 }
 
 
-/*-- zoom out background --*/
-@-webkit-keyframes zoomOutBgLogo {
+/*-- cardRotate  --*/
+@-webkit-keyframes cardRotate {
   0%   {
     visibility: visible;
-    -webkit-transform: scale(1,1) rotate(0);
+    -webkit-transform: rotateX(-8deg) rotateY(-50deg) rotateZ(0) translate3d(0px,0,0px) scale(1);
   }
   100% { 
     visibility: visible;
-    -webkit-transform: scale(0.5,0.5) rotate(-90deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(-360deg) translate3d(-35px,-145px,0px) scale(0.6);
   }
 }
-@-moz-keyframes zoomOutBgLogo {
+@-moz-keyframes cardRotate {
   0%   {
     visibility: visible;
-    -moz-transform: scale(1,1) rotate(0);
+    -moz-transform: rotateX(-8deg) rotateY(-50deg) rotateZ(0) translate3d(0px,0,0px) scale(1);
   }
   100% { 
     visibility: visible;
-    -moz-transform: scale(0.5,0.5) rotate(-90deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(-360deg) translate3d(-35px,-145px,0px) scale(0.6);
   }
 }
-@keyframes zoomOutBgLogo {
+@keyframes cardRotate {
   0%   {
     visibility: visible;
-    transform: scale(1,1) rotate(0);
+    transform: rotateX(-8deg) rotateY(-50deg) rotateZ(0) translate3d(0px,0,0px) scale(1);
   }
   100% { 
     visibility: visible;
-    transform: scale(0.5,0.5) rotate(-90deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(-360deg) translate3d(-35px,-145px,0px) scale(0.6);
   }
 }
 
-/*-- resize background --*/
-@-webkit-keyframes resizeBackground {
-  0%   {
-    width: 300px;
-    height: 300px;
-    top: 0px;
-    left: 0px;
-  }
-  100% {
-    width: 562px;
-    height: 176px;
-    top: 62px;
-    left: -131px;
-  }
-}
-@-moz-keyframes resizeBackground {
-  0%   {
-    width: 300px;
-    height: 300px;
-    top: 0px;
-    left: 0px;
-  }
-  100% {
-    width: 562px;
-    height: 176px;
-    top: 62px;
-    left: -131px;
-  }
-}
-@keyframes resizeBackground {
-  0%   {
-    width: 300px;
-    height: 300px;
-    top: 0px;
-    left: 0px;
-  }
-  100% {
-    width: 562px;
-    height: 176px;
-    top: 62px;
-    left: -131px;
-  }
-}
-
-/*-- zoom out background --*/
-@-webkit-keyframes zoomOutFrame1 {
+/*-- zoomOut1  --*/
+@-webkit-keyframes zoomOut1 {
   0%   {
     visibility: visible;
-    -webkit-transform: scale(1,1);
+    -webkit-transform: scale(1);
   }
   100% { 
     visibility: visible;
-    -webkit-transform: scale(0.37,0.37);
+    -webkit-transform: scale(0.55);
   }
 }
-@-moz-keyframes zoomOutFrame1 {
+@-moz-keyframes zoomOut1 {
   0%   {
     visibility: visible;
-    -moz-transform: scale(1,1);
+    -moz-transform: scale(1);
   }
   100% { 
     visibility: visible;
-    -moz-transform: scale(0.37,0.37);
+    -moz-transform: scale(0.55);
   }
 }
-@keyframes zoomOutFrame1 {
+@keyframes zoomOut1 {
   0%   {
     visibility: visible;
-    transform: scale(1,1);
+    transform: scale(1);
   }
   100% { 
     visibility: visible;
-    transform: scale(0.37,0.37);
+    transform: scale(0.55);
   }
 }
 
-
-
+/*-- zoomOut2  --*/
+@-webkit-keyframes zoomOut2 {
+  0%   {
+    visibility: visible;
+    -webkit-transform: scale(1);
+  }
+  100% { 
+    visibility: visible;
+    -webkit-transform: scale(0.525);
+  }
+}
+@-moz-keyframes zoomOut2 {
+  0%   {
+    visibility: visible;
+    -moz-transform: scale(1);
+  }
+  100% { 
+    visibility: visible;
+    -moz-transform: scale(0.525);
+  }
+}
+@keyframes zoomOut2 {
+  0%   {
+    visibility: visible;
+    transform: scale(1);
+  }
+  100% { 
+    visibility: visible;
+    transform: scale(0.525);
+  }
+}
 
 
 /*-------------------------------------------*/
@@ -290,14 +281,6 @@
   height: 600px;
   display: block;
 }
-.container-top {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 300px;
-  height: 300px;
-  display: block;
-}
 
 .banner-container{
   overflow: hidden;
@@ -313,9 +296,6 @@
 }
 .content{
   background-color: #ffffff;
-  -webkit-animation: fadeIn 0.5s ease-in-out 1s forwards;
-  -moz-animation: fadeIn 0.5s ease-in-out 1s forwards;
-  animation: fadeIn 0.5s ease-in-out 1s forwards;
 }
 
 .frame1-wrapper {
@@ -326,129 +306,111 @@
   -webkit-animation: fadeInOnly 10ms ease-in-out 0s forwards;
   -moz-animation: fadeInOnly 10ms ease-in-out 0s forwards;
   animation: fadeInOnly 10ms ease-in-out 0s forwards;
-
-  overflow: hidden;
 }
 .frame1-container {
-  -webkit-animation: fadeOut 0.5s ease-in-out 6s forwards;
-  -moz-animation: fadeOut 0.5s ease-in-out 6s forwards;
-  animation: fadeOut 0.5s ease-in-out 6s forwards;
-}
-.frame1-content {
-  -webkit-transform-origin: 27% 55%;
-  -moz-transform-origin: 27% 55%;
-  transform-origin: 27% 55%;
-
-  -webkit-animation: zoomOutFrame1 1s ease-in-out 4s forwards;
-  -moz-animation: zoomOutFrame1 1s ease-in-out 4s forwards;
-  animation: zoomOutFrame1 1s ease-in-out 4s forwards;
-}
-.car-container {
   -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
   -moz-animation: hideContent 10ms ease-in-out 0s forwards;
   animation: hideContent 10ms ease-in-out 0s forwards;
 }
-.car {
-  width: 1030px;
-  height: 772px;
-  background: url('./img/300x600_car.jpg') no-repeat center center;
-  top: -285px;
-  left: -266px;
-
-  -webkit-animation: fadeIn 0.5s ease-in-out 3.75s forwards;
-  -moz-animation: fadeIn 0.5s ease-in-out 3.75s forwards;
-  animation: fadeIn 0.5s ease-in-out 3.75s forwards;
+.frame1-bg {
+  background: url('./img/300x600_bg.jpg') no-repeat center center; 
 }
-
-.logo-flame {
-  background: url('./img/300x600_flame.png') no-repeat center center;
-
-  -webkit-animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-  -moz-animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-  animation: fadeOut 0.5s ease-in-out 2.5s forwards;
+.frame1-text1 {
+  background: url('./img/300x600_frame1_text1.png') no-repeat center center; 
 }
-.logo-bg-container {
-  -webkit-animation: zoomOutBgLogo 0.5s ease-in-out 3.5s forwards;
-  -moz-animation: zoomOutBgLogo 0.5s ease-in-out 3.5s forwards;
-  animation: zoomOutBgLogo 0.5s ease-in-out 3.5s forwards;
+.frame1-text2 {
+  background: url('./img/300x600_frame1_text2.png') no-repeat center center; 
 }
-.logo-bg {
-  background-color: #e05206;
-  -webkit-animation: resizeBackground 0.5s ease-in-out 3s forwards;
-  -moz-animation: resizeBackground 0.5s ease-in-out 3s forwards;
-  animation: resizeBackground 0.5s ease-in-out 3s forwards;
+.frame1-card-wrapper {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
+  perspective: 800px;
+  width: 229px;
+  height: 136px;
+  top: 143px;
+  left: 72px;
 }
-
-.logo {
-  background: url('./img/300x600_logo.png') no-repeat center center;
-  width: 234px;
-  height: 51px;
-  top: 123px;
-  left: 34px;
-
-  -webkit-animation: zoomOutLogo 0.5s ease-in-out 3.5s forwards;
-  -moz-animation: zoomOutLogo 0.5s ease-in-out 3.5s forwards;
-  animation: zoomOutLogo 0.5s ease-in-out 3.5s forwards;
-}
-
-.logo-flair {
-  background: url('./img/300x600_flare.png') no-repeat center center;
-
-  -webkit-animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-  -moz-animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-  animation: fadeOut 0.5s ease-in-out 2.5s forwards;
-}
-
-/*---- frame 2 -----*/
-
-.frame2-container {
-  -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
-  -moz-animation: hideContent 10ms ease-in-out 0s forwards;
-  animation: hideContent 10ms ease-in-out 0s forwards;
-
-  z-index: 1;
-}
-.circle-text-container {
-  -webkit-animation: fadeOut 0.5s ease-in-out 8s forwards;
-  -moz-animation: fadeOut 0.5s ease-in-out 8s forwards;
-  animation: fadeOut 0.5s ease-in-out 8s forwards;
-}
-.circle {
-  background: url('./img/300x600_circle_icon.png') no-repeat center center;
-  width: 151px;
-  height: 107px;
-  top: 50px;
-  left: 75px;
-
-  -webkit-animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-  -moz-animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-  animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-}
-.text {
-  background: url('./img/300x600_text.png') no-repeat center center;
-  width: 254px;
-  height: 64px;
-  top: 194px;
-  left: 23px;
-
-  -webkit-animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-  -moz-animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-  animation: fadeIn 0.5s ease-in-out 6.5s forwards;
-}
-
-.logo2 {
-  background: url('./img/300x600_logo2.png') no-repeat center center;
-  width: 300px;
-  height: 300px;
+.frame1-card {
+  background: url('./img/300x600_frame1_card.png') no-repeat center center;
+  width: 229px;
+  height: 136px;
   top: 0px;
   left: 0px;
-
-  -webkit-animation: fadeIn 0.5s ease-in-out 8.5s forwards;
-  -moz-animation: fadeIn 0.5s ease-in-out 8.5s forwards;
-  animation: fadeIn 0.5s ease-in-out 8.5s forwards;
 }
 
+.frame1-light1 {
+  background: url('./img/300x600_frame2_light1.png') no-repeat center center;
+}
+.frame1-light2 {
+  background: url('./img/300x600_frame2_light2.png') no-repeat center center;
+}
+
+.frame2-text {
+  background: url('./img/300x600_frame2_text.png') no-repeat center center;
+  width: 300px;
+  height: 135px;
+  left: 0px;
+  top: 110px;
+}
+.product1-container {
+  width: 173px;
+  height: 176px;
+  left: 10px;
+  bottom: 190px;
+
+  -webkit-transform-origin: 15% 60%;
+  -moz-transform-origin: 15% 60%;
+  transform-origin: 15% 60%;
+}
+.product1 {
+  background: url('./img/300x600_frame2_product1.png') no-repeat center center;
+  width: 173px;
+  height: 176px;
+  left: 0px;
+  bottom: 0px;
+}
+.product2-container {
+  width: 208px;
+  height: 181px;
+  left: 90px;
+  bottom: 105px;
+
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.product2 {
+  background: url('./img/300x600_frame2_product2.png') no-repeat center center;
+  width: 208px;
+  height: 181px;
+  left: 0px;
+  bottom: 0px;
+}
+.product3-container {
+  width: 162px;
+  height: 161px;
+  right: 110px;
+  bottom: 10px;
+
+  -webkit-transform-origin: 85% 60%;
+  -moz-transform-origin: 85% 60%;
+  transform-origin: 85% 60%;
+}
+.product3 {
+  background: url('./img/300x600_frame2_product3.png') no-repeat center center;
+  width: 162px;
+  height: 161px;
+  right: 0px;
+  bottom: 0px;
+}
+
+/*--- frame3 ---*/
+.frame3-container {
+  -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
+  -moz-animation: hideContent 10ms ease-in-out 0s forwards;
+  animation: hideContent 10ms ease-in-out 0s forwards;
+}
 .frame3 {
-  background: url('./img/300x600_final.jpg') no-repeat center center;
-  z-index: 0;
+  background: url('./img/300x600_frame3.jpg') no-repeat center center;
+  z-index: 100;
 }
