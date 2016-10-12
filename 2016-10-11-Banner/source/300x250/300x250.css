@@ -71,10 +71,12 @@
 /*-- fade out animation--*/
 @-webkit-keyframes fadeOut {
   0%   { 
+    visibility: visible;
     opacity: 1;
     -webkit-transform: translate(0,0);
   }
   100% { 
+    visibility: visible;
     opacity: 0; 
     -webkit-transform: translate(0,0);
   }
@@ -82,9 +84,11 @@
 @-moz-keyframes fadeOut {
   0%   { 
     opacity: 1; 
+    visibility: visible;
     -moz-transform: translate(0,0);
   }
   100% { 
+    visibility: visible;
     opacity: 0; 
     -moz-transform: translate(0,0);
   }
@@ -92,9 +96,11 @@
 @keyframes fadeOut {
   0%   { 
     opacity: 1; 
+    visibility: visible;
     transform: translate(0,0);
   }
   100% { 
+    visibility: visible;
     opacity: 0; 
     transform: translate(0,0);
   }
@@ -126,149 +132,134 @@
   }
 }
 
-/*-- zoom out logo --*/
-@-webkit-keyframes zoomOutLogo {
+/*-- cardComeIn  --*/
+@-webkit-keyframes cardComeIn {
   0%   {
     visibility: visible;
-    -webkit-transform: scale(1,1) rotate(0);
+    -webkit-transform: rotateX(-8deg) rotateY(-50deg) translate3d(-600px,0,0px);
   }
   100% { 
     visibility: visible;
-    -webkit-transform: scale(0.8,0.75) rotate(-90deg);
+    -webkit-transform: rotateX(-8deg) rotateY(-50deg) translate3d(0px,0,0px);
   }
 }
-@-moz-keyframes zoomOutLogo {
+@-moz-keyframes cardComeIn {
   0%   {
     visibility: visible;
-    -moz-transform: scale(1,1) rotate(0);
+    -moz-transform: rotateX(-8deg) rotateY(-50deg) translate3d(-600px,0,0px);
   }
   100% { 
     visibility: visible;
-    -moz-transform: scale(0.8,0.75) rotate(-90deg);
+    -moz-transform: rotateX(-8deg) rotateY(-50deg) translate3d(0px,0,0px);
   }
 }
-@keyframes zoomOutLogo {
+@keyframes cardComeIn {
   0%   {
     visibility: visible;
-    transform: scale(1,1) rotate(0);
+    transform: rotateX(-8deg) rotateY(-50deg) translate3d(-600px,0,0px);
   }
   100% { 
     visibility: visible;
-    transform: scale(0.8,0.75) rotate(-90deg);
+    transform: rotateX(-8deg) rotateY(-50deg) translate3d(0px,0,0px);
   }
 }
 
 
-/*-- zoom out background --*/
-@-webkit-keyframes zoomOutBgLogo {
+/*-- cardRotate  --*/
+@-webkit-keyframes cardRotate {
   0%   {
     visibility: visible;
-    -webkit-transform: scale(1,1) rotate(0);
+    -webkit-transform: rotateX(-8deg) rotateY(-50deg) rotateZ(0) translate3d(0px,0,0px) scale(1);
   }
   100% { 
     visibility: visible;
-    -webkit-transform: scale(0.5,0.5) rotate(-90deg);
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(-360deg) translate3d(-35px,-95px,0px) scale(0.6);
   }
 }
-@-moz-keyframes zoomOutBgLogo {
+@-moz-keyframes cardRotate {
   0%   {
     visibility: visible;
-    -moz-transform: scale(1,1) rotate(0);
+    -moz-transform: rotateX(-8deg) rotateY(-50deg) rotateZ(0) translate3d(0px,0,0px) scale(1);
   }
   100% { 
     visibility: visible;
-    -moz-transform: scale(0.5,0.5) rotate(-90deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(-360deg) translate3d(-35px,-95px,0px) scale(0.6);
   }
 }
-@keyframes zoomOutBgLogo {
+@keyframes cardRotate {
   0%   {
     visibility: visible;
-    transform: scale(1,1) rotate(0);
+    transform: rotateX(-8deg) rotateY(-50deg) rotateZ(0) translate3d(0px,0,0px) scale(1);
   }
   100% { 
     visibility: visible;
-    transform: scale(0.5,0.5) rotate(-90deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(-360deg) translate3d(-35px,-95px,0px) scale(0.6);
   }
 }
 
-/*-- resize background --*/
-@-webkit-keyframes resizeBackground {
-  0%   {
-    width: 300px;
-    height: 250px;
-    top: 0px;
-    left: 0px;
-  }
-  100% {
-    width: 470px;
-    height: 148px;
-    top: 51px;
-    left: -85px;
-  }
-}
-@-moz-keyframes resizeBackground {
-  0%   {
-    width: 300px;
-    height: 250px;
-    top: 0px;
-    left: 0px;
-  }
-  100% {
-    width: 470px;
-    height: 148px;
-    top: 51px;
-    left: -85px;
-  }
-}
-@keyframes resizeBackground {
-  0%   {
-    width: 300px;
-    height: 250px;
-    top: 0px;
-    left: 0px;
-  }
-  100% {
-    width: 470px;
-    height: 148px;
-    top: 51px;
-    left: -85px;
-  }
-}
-
-/*-- zoom out background --*/
-@-webkit-keyframes zoomOutFrame1 {
+/*-- zoomOut1  --*/
+@-webkit-keyframes zoomOut1 {
   0%   {
     visibility: visible;
-    -webkit-transform: scale(1,1);
+    -webkit-transform: scale(1);
   }
   100% { 
     visibility: visible;
-    -webkit-transform: scale(0.45,0.45);
+    -webkit-transform: scale(0.55);
   }
 }
-@-moz-keyframes zoomOutFrame1 {
+@-moz-keyframes zoomOut1 {
   0%   {
     visibility: visible;
-    -moz-transform: scale(1,1);
+    -moz-transform: scale(1);
   }
   100% { 
     visibility: visible;
-    -moz-transform: scale(0.45,0.45);
+    -moz-transform: scale(0.55);
   }
 }
-@keyframes zoomOutFrame1 {
+@keyframes zoomOut1 {
   0%   {
     visibility: visible;
-    transform: scale(1,1);
+    transform: scale(1);
   }
   100% { 
     visibility: visible;
-    transform: scale(0.45,0.45);
+    transform: scale(0.55);
   }
 }
 
-
-
+/*-- zoomOut2  --*/
+@-webkit-keyframes zoomOut2 {
+  0%   {
+    visibility: visible;
+    -webkit-transform: scale(1);
+  }
+  100% { 
+    visibility: visible;
+    -webkit-transform: scale(0.525);
+  }
+}
+@-moz-keyframes zoomOut2 {
+  0%   {
+    visibility: visible;
+    -moz-transform: scale(1);
+  }
+  100% { 
+    visibility: visible;
+    -moz-transform: scale(0.525);
+  }
+}
+@keyframes zoomOut2 {
+  0%   {
+    visibility: visible;
+    transform: scale(1);
+  }
+  100% { 
+    visibility: visible;
+    transform: scale(0.525);
+  }
+}
 
 
 /*-------------------------------------------*/
@@ -305,9 +296,6 @@
 }
 .content{
   background-color: #ffffff;
-  -webkit-animation: fadeIn 0.5s ease-in-out 1s forwards;
-  -moz-animation: fadeIn 0.5s ease-in-out 1s forwards;
-  animation: fadeIn 0.5s ease-in-out 1s forwards;
 }
 
 .frame1-wrapper {
@@ -320,24 +308,27 @@
   animation: fadeInOnly 10ms ease-in-out 0s forwards;
 }
 .frame1-container {
-}
-.frame1-content {
+  -webkit-animation: hideContent 10ms ease-in-out 0s forwards;
+  -moz-animation: hideContent 10ms ease-in-out 0s forwards;
+  animation: hideContent 10ms ease-in-out 0s forwards;
 }
 .frame1-bg {
   background: url('./img/300x250_bg.jpg') no-repeat center center; 
 }
+.frame1-text1 {
+  background: url('./img/300x250_frame1_text1.png') no-repeat center center; 
+}
+.frame1-text2 {
+  background: url('./img/300x250_frame1_text2.png') no-repeat center center; 
+}
 .frame1-card-wrapper {
+  -webkit-perspective: 800px;
+  -moz-perspective: 800px;
   perspective: 800px;
   width: 229px;
   height: 136px;
-  top: 100px;
-  left: 50px;
-}
-.frame1-card-container {
-  width: 229px;
-  height: 136px;
-  top: 0px;
-  left: 0px;
+  top: 93px;
+  left: 72px;
 }
 .frame1-card {
   background: url('./img/300x250_frame1_card.png') no-repeat center center;
@@ -345,8 +336,72 @@
   height: 136px;
   top: 0px;
   left: 0px;
-  transform: rotateY(-60deg) translate3d(-140px,0,0);
+}
 
+.frame1-light1 {
+  background: url('./img/300x250_frame2_light1.png') no-repeat center center;
+}
+.frame1-light2 {
+  background: url('./img/300x250_frame2_light2.png') no-repeat center center;
+}
+
+.frame2-text {
+  background: url('./img/300x250_frame2_text.png') no-repeat center center;
+  width: 300px;
+  height: 135px;
+  left: 0px;
+  bottom: 5px;
+}
+.product1-container {
+  width: 178px;
+  height: 177px;
+  left: 0px;
+  bottom: 0px;
+
+  -webkit-transform-origin: 15% 60%;
+  -moz-transform-origin: 15% 60%;
+  transform-origin: 15% 60%;
+}
+.product1 {
+  background: url('./img/300x250_frame2_product1.png') no-repeat center center;
+  width: 178px;
+  height: 177px;
+  left: 0px;
+  bottom: 0px;
+}
+.product2-container {
+  width: 239px;
+  height: 189px;
+  left: 30px;
+  bottom: 0px;
+
+  -webkit-transform-origin: 50% 100%;
+  -moz-transform-origin: 50% 100%;
+  transform-origin: 50% 100%;
+}
+.product2 {
+  background: url('./img/300x250_frame2_product2.png') no-repeat center center;
+  width: 239px;
+  height: 189px;
+  left: 0px;
+  bottom: 0px;
+}
+.product3-container {
+  width: 180px;
+  height: 178px;
+  right: 0px;
+  bottom: 0px;
+
+  -webkit-transform-origin: 85% 60%;
+  -moz-transform-origin: 85% 60%;
+  transform-origin: 85% 60%;
+}
+.product3 {
+  background: url('./img/300x250_frame2_product3.png') no-repeat center center;
+  width: 180px;
+  height: 178px;
+  right: 0px;
+  bottom: 0px;
 }
 
 /*--- frame3 ---*/
@@ -356,4 +411,6 @@
   animation: hideContent 10ms ease-in-out 0s forwards;
 }
 .frame3 {
+  background: url('./img/300x250_frame3.jpg') no-repeat center center;
+  z-index: 100;
 }
